@@ -1,0 +1,99 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  /* Heading styles */
+  h1, h2, h3, h4 {
+    @apply text-2xl font-bold;
+  }
+
+  /* Paragraph styles */
+  p {
+    @apply text-base text-gray-600;
+  }
+
+  /* Link styles */
+  a {
+    @apply text-blue-500 hover:underline;
+  }
+
+/* app.css */
+button.btn {
+  @apply hover:bg-gray-100 focus:outline-none focus:ring focus:ring-blue-300;
+}
+
+  /* Label styles */
+  label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  /* List styles */
+  ul {
+    @apply list-none p-0 m-0;
+  }
+
+  li {
+    @apply mb-1 p-2 bg-gray-100 rounded hover:bg-gray-200;
+  }
+
+  li.small {
+    @apply text-sm text-gray-500;
+  }
+
+  li.strong {
+    @apply font-bold;
+  }
+
+  li:hover {
+    @apply bg-gray-200; /* TailwindCSS default hover background */
+}
+
+  /* Table styles */
+  table {
+    @apply w-full border-collapse border border-gray-300;
+  }
+
+  th {
+    @apply bg-gray-200 text-gray-600 font-bold uppercase text-sm py-3 px-6 text-left;
+  }
+
+  td {
+    @apply border px-4 py-2 text-gray-700;
+  }
+
+  tr:nth-child(even) {
+    @apply bg-gray-100;
+  }
+
+  tr:hover {
+    @apply bg-gray-200;
+  }
+
+  /* Footer styles */
+  footer {
+    @apply text-sm text-gray-500 mt-10 flex justify-start items-center gap-2 pl-32 relative z-0;
+  }
+}
+
+@layer components {
+  /* Compact list styles */
+  .compact-list li {
+    @apply p-2 mb-2 bg-gray-200;
+  }
+
+  /* Highlighted list styles */
+  .highlighted-list li {
+    @apply bg-yellow-100 border border-yellow-300;
+  }
+
+  /* No results text */
+  .no-results {
+    @apply text-center text-gray-500 italic;
+  }
+}

@@ -1,0 +1,980 @@
+{
+"globalRegions": [
+  {
+    "name": "North America",
+    "latitude": 48.1667,
+    "longitude": -98.7333,
+    "countries": ["Canada", "United States", "Mexico"]
+  },
+{
+    "name": "South America",
+    "latitude": -14.6048,
+    "longitude": -57.6562,
+    "countries": ["Argentina", "Brazil", "Chile", "Colombia", "Peru", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"]
+},
+  {
+    "name": "Europe",
+    "latitude": 50.1109,
+    "longitude": 10.0423,
+    "countries": [
+        "Aland Islands",
+        "Albania",
+        "Andorra",
+        "Armenia",
+        "Austria",
+        "Azerbaijan",
+        "Belarus",
+        "Belgium",
+        "Bosnia and Herzegovina",
+        "Bouvet Island",
+        "Bulgaria",
+        "Croatia",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "Falkland Islands",
+        "Faroe Islands",
+        "Finland",
+        "France",
+        "Georgia",
+        "Germany",
+        "Gibraltar",
+        "Greece",
+        "Guernsey",
+        "Vatican City",
+        "Hungary",
+        "Iceland",
+        "Ireland",
+        "Isle of Man",
+        "Italy",
+        "Jersey",
+        "Latvia",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "North Macedonia",
+        "Malta",
+        "Moldova",
+        "Monaco",
+        "Montenegro",
+        "Netherlands",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Russia",
+        "San Marino",
+        "Serbia",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Svalbard and Jan Mayen",
+        "Sweden",
+        "Switzerland",
+        "Ukraine",
+        "United Kingdom"
+      ]
+  },
+  {
+    "name": "Middle East",
+    "latitude": 29.3759,
+    "longitude": 47.9774,
+    "countries": [
+        "Bahrain",
+        "Cyprus",
+        "Iran",
+        "Iraq",
+        "Israel",
+        "Jordan",
+        "Kuwait",
+        "Lebanon",
+        "Oman",
+        "Palestinian Territories",
+        "Qatar",
+        "Saudi Arabia",
+        "Syria",
+        "Turkey",
+        "United Arab Emirates",
+        "Yemen"
+      ]
+  },
+  {
+    "name": "North Africa",
+    "latitude": 26.7561,
+    "longitude": 33.95264,
+    "countries": ["Algeria", "Egypt", "Libya", "Morocco", "Tunisia"]
+  },
+    {
+        "name": "Southern Africa",
+        "latitude": -29.000,
+        "longitude": 24.000,
+        "countries": ["South Africa", "Namibia", "Botswana", "Zimbabwe", "Mozambique"]
+    },
+  {
+    "name": "Oceania",
+    "latitude": -27.000,
+    "longitude": 133.000,
+    "countries": [
+        "American Samoa",
+        "Australia",
+        "Cook Islands",
+        "Fiji",
+        "French Polynesia",
+        "Guam",
+        "Kiribati",
+        "Marshall Islands",
+        "Micronesia",
+        "Nauru",
+        "New Caledonia",
+        "New Zealand",
+        "Niue",
+        "Norfolk Island",
+        "Northern Mariana Islands",
+        "Palau",
+        "Papua New Guinea",
+        "Pitcairn",
+        "Samoa",
+        "Solomon Islands",
+        "Tokelau",
+        "Tonga",
+        "Tuvalu",
+        "US Minor Outlying Islands",
+        "Vanuatu",
+        "Wallis and Futuna"
+      ]
+  },
+  {
+    "name": "East Asia",
+    "latitude": 35.8617,
+    "longitude": 104.1954,
+    "countries": [
+        "China",
+        "Hong Kong",
+        "Japan",
+        "North Korea",
+        "South Korea",
+        "Macau",
+        "Mongolia",
+        "Taiwan",
+        "Russia"
+      ]
+  },
+  {
+    "name": "Southeast Asia",
+    "latitude": 1.29027,
+    "longitude": 103.8519,
+    "countries": [
+      "Brunei",
+      "Cambodia",
+      "Christmas Island",
+      "Cocos Islands",
+      "Indonesia",
+      "Laos",
+      "Malaysia",
+      "Philippines",
+      "Singapore",
+      "Thailand",
+      "Timor-Leste",
+      "Vietnam"
+    ]
+  },
+    {
+        "name": "South Asia",
+        "latitude": 20.5937,
+        "longitude": 78.9629,
+        "countries": ["India", "Pakistan", "Bangladesh", "Sri Lanka", "Nepal", "Bhutan", "Maldives"]
+    }
+],
+"countries": [
+    {
+        "name": "Canada",
+        "isoCode": "CA",
+        "latitude": 56.1304,
+        "longitude": -106.3468,
+        "cities": [
+          { "name": "Montreal", "latitude": 45.50169, "longitude": -73.56725, "globalRegion": "North America" },
+          { "name": "Toronto", "latitude": 43.65107, "longitude": -79.34702, "globalRegion": "North America" },
+          { "name": "Vancouver", "latitude": 49.28273, "longitude": -123.12074, "globalRegion": "North America" }
+        ]
+    },
+    {
+        "name": "United States",
+        "isoCode": "US",
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "cities": [
+            { "name": "Boston", "latitude": 42.36008, "longitude": -71.05888, "globalRegion": "North America" },
+            { "name": "Chicago", "latitude": 41.87811, "longitude": -87.6298, "globalRegion": "North America" },
+            { "name": "Los Angeles", "latitude": 34.05223, "longitude": -118.24368, "globalRegion": "North America" },
+            { "name": "Miami", "latitude": 25.76168, "longitude": -80.19179, "globalRegion": "North America" },
+            { "name": "New York", "latitude": 40.71278, "longitude": -74.00597, "globalRegion": "North America" },
+            { "name": "Philadelphia", "latitude": 39.95258, "longitude": -75.16522, "globalRegion": "North America" },
+            { "name": "Phoenix", "latitude": 33.44838, "longitude": -112.07404, "globalRegion": "North America" },
+            { "name": "Portland", "latitude": 45.51279, "longitude": -122.67621, "globalRegion": "North America" },
+            { "name": "Richmond", "latitude": 37.54073, "longitude": -77.43605, "globalRegion": "North America" },
+            { "name": "San Francisco", "latitude": 37.77493, "longitude": -122.41942, "globalRegion": "North America" },
+            { "name": "Seattle", "latitude": 47.60621, "longitude": -122.33207, "globalRegion": "North America" },
+            { "name": "Washington", "latitude": 38.90719, "longitude": -77.03687, "globalRegion": "North America" },
+            { "name": "Honolulu", "latitude": 21.30694, "longitude": -157.85833, "globalRegion": "Oceania" }
+        ]
+    },
+    {
+        "name": "Mexico",
+        "isoCode": "MX",
+        "latitude": 23.6345,
+        "longitude": -102.5528,
+        "cities": [
+            { "name": "Mexico City", "latitude": 19.4326, "longitude": -99.1332, "globalRegion": "North America" },
+            { "name": "Guadalajara", "latitude": 20.6597, "longitude": -103.3496, "globalRegion": "North America" },
+            { "name": "Monterrey", "latitude": 25.6866, "longitude": -100.3161, "globalRegion": "North America" },
+            { "name": "Cancun", "latitude": 21.1619, "longitude": -86.8515, "globalRegion": "North America" },
+            { "name": "Tijuana", "latitude": 32.5149, "longitude": -117.0382, "globalRegion": "North America" }
+        ]
+    },
+    {
+        "name": "Argentina",
+        "isoCode": "AR",
+        "latitude": -38.4161,
+        "longitude": -63.6167,
+        "cities": [
+            { "name": "Buenos Aires", "latitude": -34.6037, "longitude": -58.3816, "globalRegion": "South America" }
+        ]
+    },
+      {
+        "name": "Brazil",
+        "isoCode": "BR",
+        "latitude": -14.235,
+        "longitude": -51.9253,
+        "cities": [
+          { "name": "Belo Horizonte", "latitude": -19.9173, "longitude": -43.93456, "globalRegion": "South America" },
+          { "name": "Contagem", "latitude": -19.93118, "longitude": -44.05387, "globalRegion": "South America" },
+          { "name": "Florianópolis", "latitude": -27.59538, "longitude": -48.54805, "globalRegion": "South America" },
+          { "name": "Itaúnas", "latitude": -18.41771, "longitude": -39.73656, "globalRegion": "South America" },
+          { "name": "Juiz de Fora", "latitude": -21.764, "longitude": -43.34961, "globalRegion": "South America" },
+          { "name": "Rio de Janeiro", "latitude": -22.90685, "longitude": -43.1729, "globalRegion": "South America" },
+          { "name": "Salvador", "latitude": -12.9714, "longitude": -38.5014, "globalRegion": "South America" },
+          { "name": "Santo André", "latitude": -23.66389, "longitude": -46.53833, "globalRegion": "South America" },
+          { "name": "São Paulo", "latitude": -23.55052, "longitude": -46.63331, "globalRegion": "South America" }
+        ]
+      },
+      {
+        "name": "Chile",
+        "isoCode": "CL",
+        "latitude": -35.6751,
+        "longitude": -71.543,
+        "cities": [
+          { "name": "Santiago", "latitude": -33.44889, "longitude": -70.66927, "globalRegion": "South America" },
+          { "name": "Valparaíso", "latitude": -33.04724, "longitude": -71.61269, "globalRegion": "South America" }
+        ]
+      },
+      {
+        "name": "Albania",
+        "isoCode": "AL",
+        "latitude": 41.1533,
+        "longitude": 20.1683,
+        "cities": [
+          { "name": "Tirana", "latitude": 41.3275, "longitude": 19.8189, "globalRegion": "Europe" }
+        ]
+      },
+    {
+      "name": "Austria",
+      "isoCode": "AT",
+      "latitude": 47.5162,
+      "longitude": 14.5501,
+      "cities": [
+        { "name": "Graz", "latitude": 47.07071, "longitude": 15.4395, "globalRegion": "Europe" },
+        { "name": "Hard", "latitude": 47.48796, "longitude": 9.6893, "globalRegion": "Europe" },
+        { "name": "Innsbruck", "latitude": 47.26888, "longitude": 11.39327, "globalRegion": "Europe" },
+        { "name": "Linz", "latitude": 48.30694, "longitude": 14.28583, "globalRegion": "Europe" },
+        { "name": "Salzburg", "latitude": 47.80949, "longitude": 13.05501, "globalRegion": "Europe" },
+        { "name": "Vienna", "latitude": 48.20817, "longitude": 16.37382, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Belgium",
+      "isoCode": "BE",
+      "latitude": 50.5039,
+      "longitude": 4.4699,
+      "cities": [
+        { "name": "Antwerp", "latitude": 51.22111, "longitude": 4.39971, "globalRegion": "Europe" },
+        { "name": "Bruges", "latitude": 51.20935, "longitude": 3.2247, "globalRegion": "Europe" },
+        { "name": "Brussels", "latitude": 50.85034, "longitude": 4.35171, "globalRegion": "Europe" },
+        { "name": "Ghent", "latitude": 51.05434, "longitude": 3.71742, "globalRegion": "Europe" },
+        { "name": "Hasselt", "latitude": 50.93069, "longitude": 5.33249, "globalRegion": "Europe" },
+        { "name": "Mechelen", "latitude": 51.02574, "longitude": 4.47762, "globalRegion": "Europe" },
+        { "name": "Namur", "latitude": 50.46739, "longitude": 4.87199, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Belarus",
+      "isoCode": "BY",
+      "latitude": 53.9006,
+      "longitude": 27.559,
+      "cities": [
+        { "name": "Minsk", "latitude": 53.9006, "longitude": 27.559, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "isoCode": "BA",
+      "latitude": 43.9159,
+      "longitude": 17.6791,
+      "cities": [
+        { "name": "Mostar", "latitude": 43.34333, "longitude": 17.80778, "globalRegion": "Europe" },
+        { "name": "Sarajevo", "latitude": 43.85626, "longitude": 18.41308, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "isoCode": "BG",
+      "latitude": 42.7339,
+      "longitude": 25.4858,
+      "cities": [
+        { "name": "Sofia", "latitude": 42.69751, "longitude": 23.32415, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Croatia",
+      "isoCode": "HR",
+      "latitude": 45.1,
+      "longitude": 15.2,
+      "cities": [
+        { "name": "Split", "latitude": 43.50813, "longitude": 16.44019, "globalRegion": "Europe" },
+        { "name": "Zagreb", "latitude": 45.81501, "longitude": 15.98192, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Cyprus",
+      "isoCode": "CY",
+      "latitude": 35.1264,
+      "longitude": 33.4299,
+      "cities": [
+        { "name": "Nicosia", "latitude": 35.18557, "longitude": 33.38228, "globalRegion": "Middle East" },
+        { "name": "Limassol", "latitude": 34.70713, "longitude": 33.02262, "globalRegion": "Middle East" },
+        { "name": "Larnaca", "latitude": 34.91868, "longitude": 33.63493, "globalRegion": "Middle East" },
+        { "name": "Paphos", "latitude": 34.77676, "longitude": 32.42451, "globalRegion": "Middle East" },
+        { "name": "North Nicosia", "latitude": 35.19826, "longitude": 33.35544, "globalRegion": "Middle East" },
+        { "name": "Kyrenia", "latitude": 35.33693, "longitude": 33.31729, "globalRegion": "Middle East" },
+        { "name": "Famagusta", "latitude": 35.12357, "longitude": 33.95051, "globalRegion": "Middle East" },
+        { "name": "Morphou", "latitude": 35.19807, "longitude": 32.99399, "globalRegion": "Middle East" }
+      ]
+    },
+    {
+      "name": "Czech Republic",
+      "isoCode": "CZ",
+      "latitude": 49.8175,
+      "longitude": 15.473,
+      "cities": [
+        { "name": "Brno", "latitude": 49.19506, "longitude": 16.60684, "globalRegion": "Europe" },
+        { "name": "Ostrava", "latitude": 49.83565, "longitude": 18.29226, "globalRegion": "Europe" },
+        { "name": "Pilsen", "latitude": 49.73843, "longitude": 13.37364, "globalRegion": "Europe" },
+        { "name": "Prague", "latitude": 50.07554, "longitude": 14.4378, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Denmark",
+      "isoCode": "DK",
+      "latitude": 56.2639,
+      "longitude": 9.5018,
+      "cities": [
+        { "name": "Aalborg", "latitude": 57.04882, "longitude": 9.92175, "globalRegion": "Europe" },
+        { "name": "Aarhus", "latitude": 56.16294, "longitude": 10.20392, "globalRegion": "Europe" },
+        { "name": "Copenhagen", "latitude": 55.6761, "longitude": 12.56834, "globalRegion": "Europe" },
+        { "name": "Odense", "latitude": 55.40376, "longitude": 10.40237, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Estonia",
+      "isoCode": "EE",
+      "latitude": 58.5953,
+      "longitude": 25.0136,
+      "cities": [
+        { "name": "Tallinn", "latitude": 59.437, "longitude": 24.75357, "globalRegion": "Europe" },
+        { "name": "Tartu", "latitude": 58.37798, "longitude": 26.72904, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Finland",
+      "isoCode": "FI",
+      "latitude": 61.9241,
+      "longitude": 25.7482,
+      "cities": [
+        { "name": "Helsinki", "latitude": 60.16952, "longitude": 24.93545, "globalRegion": "Europe" },
+        { "name": "Kokkola", "latitude": 63.84146, "longitude": 23.12669, "globalRegion": "Europe" },
+        { "name": "Oulu", "latitude": 65.01209, "longitude": 25.46508, "globalRegion": "Europe" },
+        { "name": "Rovaniemi", "latitude": 66.50395, "longitude": 25.72939, "globalRegion": "Europe" },
+        { "name": "Tampere", "latitude": 61.49775, "longitude": 23.76095, "globalRegion": "Europe" },
+        { "name": "Turku", "latitude": 60.45181, "longitude": 22.26663, "globalRegion": "Europe" }
+      ]
+    },
+    {
+        "name": "France",
+        "isoCode": "FR",
+        "latitude": 46.6034,
+        "longitude": 1.8883,
+        "cities": [
+            { "name": "Amiens", "latitude": 49.89417, "longitude": 2.2957, "globalRegion": "Europe" },
+            { "name": "Angers", "latitude": 47.47399, "longitude": -0.55156, "globalRegion": "Europe" },
+            { "name": "Avignon", "latitude": 43.94932, "longitude": 4.80553, "globalRegion": "Europe" },
+            { "name": "Bordeaux", "latitude": 44.84044, "longitude": -0.5805, "globalRegion": "Europe" },
+            { "name": "Bretagne", "latitude": 48.20205, "longitude": -2.93264, "globalRegion": "Europe" },
+            { "name": "Clermont-Ferrand", "latitude": 45.7831, "longitude": 3.0824, "globalRegion": "Europe" },
+            { "name": "Gap", "latitude": 44.55805, "longitude": 6.078, "globalRegion": "Europe" },
+            { "name": "Grenoble", "latitude": 45.1715, "longitude": 5.7224, "globalRegion": "Europe" },
+            { "name": "Guipry-Messac", "latitude": 47.78333, "longitude": -1.78333, "globalRegion": "Europe" },
+            { "name": "La Rochelle", "latitude": 46.15911, "longitude": -1.152, "globalRegion": "Europe" },
+            { "name": "Lille", "latitude": 50.63297, "longitude": 3.05858, "globalRegion": "Europe" },
+            { "name": "Limoges", "latitude": 45.83153, "longitude": 1.2578, "globalRegion": "Europe" },
+            { "name": "Lorient", "latitude": 47.748, "longitude": -3.366, "globalRegion": "Europe" },
+            { "name": "Lyon", "latitude": 45.74846, "longitude": 4.84671, "globalRegion": "Europe" },
+            { "name": "Marseille", "latitude": 43.29695, "longitude": 5.38107, "globalRegion": "Europe" },
+            { "name": "Montpellier", "latitude": 43.61093, "longitude": 3.87635, "globalRegion": "Europe" },
+            { "name": "Nancy", "latitude": 48.68333, "longitude": 6.2, "globalRegion": "Europe" },
+            { "name": "Nantes", "latitude": 47.21725, "longitude": -1.55336, "globalRegion": "Europe" },
+            { "name": "Nice", "latitude": 43.71017, "longitude": 7.26195, "globalRegion": "Europe" },
+            { "name": "Nîmes", "latitude": 43.8367, "longitude": 4.36005, "globalRegion": "Europe" },
+            { "name": "Orléans", "latitude": 47.90296, "longitude": 1.90925, "globalRegion": "Europe" },
+            { "name": "Paris", "latitude": 48.85661, "longitude": 2.35222, "globalRegion": "Europe" },
+            { "name": "Reims", "latitude": 49.25833, "longitude": 4.03169, "globalRegion": "Europe" },
+            { "name": "Rennes", "latitude": 48.11727, "longitude": -1.67779, "globalRegion": "Europe" },
+            { "name": "Rouen", "latitude": 49.44323, "longitude": 1.09997, "globalRegion": "Europe" },
+            { "name": "Strasbourg", "latitude": 48.58392, "longitude": 7.74553, "globalRegion": "Europe" },
+            { "name": "Toulouse", "latitude": 43.60426, "longitude": 1.44367, "globalRegion": "Europe" }
+        ]
+    },
+    {
+        "name": "Germany",
+        "isoCode": "DE",
+        "latitude": 51.1657,
+        "longitude": 10.4515,
+        "cities": [
+            { "name": "Augsburg", "latitude": 48.37054, "longitude": 10.89779, "globalRegion": "Europe" },
+            { "name": "Bamberg", "latitude": 49.89881, "longitude": 10.90276, "globalRegion": "Europe" },
+            { "name": "Bayreuth", "latitude": 49.94564, "longitude": 11.57133, "globalRegion": "Europe" },
+            { "name": "Berlin", "latitude": 52.52001, "longitude": 13.40495, "globalRegion": "Europe" },
+            { "name": "Bielefeld", "latitude": 52.03023, "longitude": 8.53247, "globalRegion": "Europe" },
+            { "name": "Bochum", "latitude": 51.48184, "longitude": 7.21624, "globalRegion": "Europe" },
+            { "name": "Bonn", "latitude": 50.73743, "longitude": 7.09821, "globalRegion": "Europe" },
+            { "name": "Braunschweig", "latitude": 52.26887, "longitude": 10.52677, "globalRegion": "Europe" },
+            { "name": "Bremen", "latitude": 53.0793, "longitude": 8.80169, "globalRegion": "Europe" },
+            { "name": "Brunswick", "latitude": 52.26758, "longitude": 10.526, "globalRegion": "Europe" },
+            { "name": "Cologne", "latitude": 50.93753, "longitude": 6.96028, "globalRegion": "Europe" },
+            { "name": "Darmstadt", "latitude": 49.87283, "longitude": 8.65119, "globalRegion": "Europe" },
+            { "name": "Dresden", "latitude": 51.05041, "longitude": 13.73726, "globalRegion": "Europe" },
+            { "name": "Duisburg", "latitude": 51.43441, "longitude": 6.76233, "globalRegion": "Europe" },
+            { "name": "Düsseldorf", "latitude": 51.22774, "longitude": 6.77346, "globalRegion": "Europe" },
+            { "name": "Essen", "latitude": 51.45564, "longitude": 7.01156, "globalRegion": "Europe" },
+            { "name": "Esslingen", "latitude": 48.7408, "longitude": 9.30473, "globalRegion": "Europe" },
+            { "name": "Frankfurt", "latitude": 50.11092, "longitude": 8.68213, "globalRegion": "Europe" },
+            { "name": "Freiburg", "latitude": 47.99901, "longitude": 7.8421, "globalRegion": "Europe" },
+            { "name": "Freising", "latitude": 48.40289, "longitude": 11.74885, "globalRegion": "Europe" },
+            { "name": "Göttingen", "latitude": 51.54128, "longitude": 9.9158, "globalRegion": "Europe" },
+            { "name": "Hagen", "latitude": 51.36092, "longitude": 7.47171, "globalRegion": "Europe" },
+            { "name": "Hamburg", "latitude": 53.55108, "longitude": 9.99368, "globalRegion": "Europe" },
+            { "name": "Hamm", "latitude": 51.67386, "longitude": 7.81598, "globalRegion": "Europe" },
+            { "name": "Hanau", "latitude": 50.13432, "longitude": 8.91435, "globalRegion": "Europe" },
+            { "name": "Hannover", "latitude": 52.37589, "longitude": 9.73201, "globalRegion": "Europe" },
+            { "name": "Heidelberg", "latitude": 49.39875, "longitude": 8.67243, "globalRegion": "Europe" },
+            { "name": "Jena", "latitude": 50.92705, "longitude": 11.58924, "globalRegion": "Europe" },
+            { "name": "Kaiserslautern", "latitude": 49.44006, "longitude": 7.74912, "globalRegion": "Europe" },
+            { "name": "Karlsruhe", "latitude": 49.00689, "longitude": 8.40365, "globalRegion": "Europe" },
+            { "name": "Kassel", "latitude": 51.31545, "longitude": 9.49764, "globalRegion": "Europe" },
+            { "name": "Kempten", "latitude": 47.72344, "longitude": 10.31482, "globalRegion": "Europe" },
+            { "name": "Kiel", "latitude": 54.32329, "longitude": 10.12276, "globalRegion": "Europe" },
+            { "name": "Koblenz", "latitude": 50.35694, "longitude": 7.58871, "globalRegion": "Europe" },
+            { "name": "Konstanz", "latitude": 47.67795, "longitude": 9.17324, "globalRegion": "Europe" },
+            { "name": "Leipzig", "latitude": 51.3397, "longitude": 12.37307, "globalRegion": "Europe" },
+            { "name": "Lübeck", "latitude": 53.86547, "longitude": 10.68656, "globalRegion": "Europe" },
+            { "name": "Ludwigshafen", "latitude": 49.47741, "longitude": 8.44518, "globalRegion": "Europe" },
+            { "name": "Magdeburg", "latitude": 52.12053, "longitude": 11.62762, "globalRegion": "Europe" },
+            { "name": "Mainz", "latitude": 49.99286, "longitude": 8.24725, "globalRegion": "Europe" },
+            { "name": "Mannheim", "latitude": 49.48746, "longitude": 8.46604, "globalRegion": "Europe" },
+            { "name": "Moers", "latitude": 51.45151, "longitude": 6.64035, "globalRegion": "Europe" },
+            { "name": "Mönchengladbach", "latitude": 51.18046, "longitude": 6.44275, "globalRegion": "Europe" },
+            { "name": "Munich", "latitude": 48.13512, "longitude": 11.58198, "globalRegion": "Europe" },
+            { "name": "Münster", "latitude": 51.96066, "longitude": 7.62613, "globalRegion": "Europe" },
+            { "name": "Nuremberg", "latitude": 49.4521, "longitude": 11.07666, "globalRegion": "Europe" },
+            { "name": "Osnabrück", "latitude": 52.27991, "longitude": 8.04718, "globalRegion": "Europe" },
+            { "name": "Passau", "latitude": 48.5664, "longitude": 13.43195, "globalRegion": "Europe" },
+            { "name": "Regensburg", "latitude": 49.01343, "longitude": 12.10162, "globalRegion": "Europe" },
+            { "name": "Rostock", "latitude": 54.09244, "longitude": 12.09915, "globalRegion": "Europe" },
+            { "name": "Saarbrücken", "latitude": 49.24016, "longitude": 6.99693, "globalRegion": "Europe" },
+            { "name": "Schwerin", "latitude": 53.62937, "longitude": 11.41316, "globalRegion": "Europe" },
+            { "name": "Stuttgart", "latitude": 48.77585, "longitude": 9.18293, "globalRegion": "Europe" },
+            { "name": "Tübingen", "latitude": 48.52164, "longitude": 9.05764, "globalRegion": "Europe" },
+            { "name": "Ulm", "latitude": 48.40108, "longitude": 9.98761, "globalRegion": "Europe" },
+            { "name": "Wiesbaden", "latitude": 50.08258, "longitude": 8.24145, "globalRegion": "Europe" },
+            { "name": "Witten", "latitude": 51.44363, "longitude": 7.35258, "globalRegion": "Europe" },
+            { "name": "Würzburg", "latitude": 49.79443, "longitude": 9.92982, "globalRegion": "Europe" }
+        ]
+    },
+    {
+        "name": "Hungary",
+        "isoCode": "HU",
+        "latitude": 47.1625,
+        "longitude": 19.5033,
+        "cities": [
+          { "name": "Budapest", "latitude": 47.49791, "longitude": 19.04024, "globalRegion": "Europe" },
+          { "name": "Debrecen", "latitude": 47.5316, "longitude": 21.62731, "globalRegion": "Europe" },
+          { "name": "Gyor", "latitude": 47.68746, "longitude": 17.6504, "globalRegion": "Europe" },
+          { "name": "Kecskemét", "latitude": 46.89637, "longitude": 19.68969, "globalRegion": "Europe" },
+          { "name": "Miskolc", "latitude": 48.10348, "longitude": 20.77844, "globalRegion": "Europe" }
+        ]
+      },
+      {
+        "name": "Ireland",
+        "isoCode": "IE",
+        "latitude": 53.1424,
+        "longitude": -7.6921,
+        "cities": [
+          { "name": "Cork", "latitude": 51.89797, "longitude": -8.47061, "globalRegion": "Europe" },
+          { "name": "Dublin", "latitude": 53.3498, "longitude": -6.26031, "globalRegion": "Europe" },
+          { "name": "Galway", "latitude": 53.27067, "longitude": -9.05679, "globalRegion": "Europe" },
+          { "name": "Kilkenny", "latitude": 52.65414, "longitude": -7.25244, "globalRegion": "Europe" }
+        ]
+      },
+      {
+        "name": "Israel",
+        "isoCode": "IL",
+        "latitude": 31.0461,
+        "longitude": 34.8516,
+        "cities": [
+            { "name": "Haifa", "latitude": 32.79404, "longitude": 34.98957, "globalRegion": "Middle East" },
+            { "name": "Tel Aviv", "latitude": 32.0853, "longitude": 34.78177, "globalRegion": "Middle East" },
+            { "name": "Jerusalem", "latitude": 31.76832, "longitude": 35.21371, "globalRegion": "Middle East" }
+        ]
+      },
+    {
+      "name": "Italy",
+      "isoCode": "IT",
+      "latitude": 41.87194,
+      "longitude": 12.56738,
+      "cities": [
+        { "name": "Bari", "latitude": 41.11714, "longitude": 16.87187, "globalRegion": "Europe" },
+        { "name": "Bergamo", "latitude": 45.69498, "longitude": 9.66895, "globalRegion": "Europe" },
+        { "name": "Bologna", "latitude": 44.49488, "longitude": 11.34262, "globalRegion": "Europe" },
+        { "name": "Bolzano", "latitude": 46.49829, "longitude": 11.35478, "globalRegion": "Europe" },
+        { "name": "Brescia", "latitude": 45.54155, "longitude": 10.2118, "globalRegion": "Europe" },
+        { "name": "Cagliari", "latitude": 39.22384, "longitude": 9.12166, "globalRegion": "Europe" },
+        { "name": "Catania", "latitude": 37.50788, "longitude": 15.08303, "globalRegion": "Europe" },
+        { "name": "Crotone", "latitude": 39.08036, "longitude": 17.12739, "globalRegion": "Europe" },
+        { "name": "Ferrara", "latitude": 44.83588, "longitude": 11.61973, "globalRegion": "Europe" },
+        { "name": "Florence", "latitude": 43.76956, "longitude": 11.25581, "globalRegion": "Europe" },
+        { "name": "Genova", "latitude": 44.40564, "longitude": 8.94626, "globalRegion": "Europe" },
+        { "name": "La Spezia", "latitude": 44.10245, "longitude": 9.82408, "globalRegion": "Europe" },
+        { "name": "Milan", "latitude": 45.4642, "longitude": 9.18998, "globalRegion": "Europe" },
+        { "name": "Modena", "latitude": 44.64713, "longitude": 10.92523, "globalRegion": "Europe" },
+        { "name": "Naples", "latitude": 40.85177, "longitude": 14.26812, "globalRegion": "Europe" },
+        { "name": "Padua", "latitude": 45.40643, "longitude": 11.87676, "globalRegion": "Europe" },
+        { "name": "Parma", "latitude": 44.80149, "longitude": 10.3279, "globalRegion": "Europe" },
+        { "name": "Pavia", "latitude": 45.18472, "longitude": 9.15821, "globalRegion": "Europe" },
+        { "name": "Perugia", "latitude": 43.1122, "longitude": 12.38878, "globalRegion": "Europe" },
+        { "name": "Pescara", "latitude": 42.46427, "longitude": 14.21494, "globalRegion": "Europe" },
+        { "name": "Pisa", "latitude": 43.71603, "longitude": 10.39661, "globalRegion": "Europe" },
+        { "name": "Ragusa", "latitude": 36.92693, "longitude": 14.73021, "globalRegion": "Europe" },
+        { "name": "Rimini", "latitude": 44.05939, "longitude": 12.56833, "globalRegion": "Europe" },
+        { "name": "Rome", "latitude": 41.90278, "longitude": 12.49636, "globalRegion": "Europe" },
+        { "name": "Salerno", "latitude": 40.68244, "longitude": 14.7681, "globalRegion": "Europe" },
+        { "name": "Sassari", "latitude": 40.72593, "longitude": 8.55552, "globalRegion": "Europe" },
+        { "name": "Siena", "latitude": 43.31881, "longitude": 11.33076, "globalRegion": "Europe" },
+        { "name": "Trapani", "latitude": 38.01766, "longitude": 12.53631, "globalRegion": "Europe" },
+        { "name": "Trento", "latitude": 46.07043, "longitude": 11.11905, "globalRegion": "Europe" },
+        { "name": "Trieste", "latitude": 45.64953, "longitude": 13.77682, "globalRegion": "Europe" },
+        { "name": "Turin", "latitude": 45.07031, "longitude": 7.68686, "globalRegion": "Europe" },
+        { "name": "Udine", "latitude": 46.06387, "longitude": 13.23761, "globalRegion": "Europe" },
+        { "name": "Venice", "latitude": 45.44084, "longitude": 12.31551, "globalRegion": "Europe" },
+        { "name": "Verona", "latitude": 45.43838, "longitude": 10.99162, "globalRegion": "Europe" },
+        { "name": "Vicenza", "latitude": 45.54694, "longitude": 11.5475, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Lithuania",
+      "isoCode": "LT",
+      "latitude": 55.1694,
+      "longitude": 23.8813,
+      "cities": [
+        { "name": "Klaipėda", "latitude": 55.7033, "longitude": 21.14428, "globalRegion": "Europe" },
+        { "name": "Vilnius", "latitude": 54.68716, "longitude": 25.27965, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Luxembourg",
+      "isoCode": "LU",
+      "latitude": 49.81527,
+      "longitude": 6.12958,
+      "cities": [
+        { "name": "Luxembourg", "latitude": 49.81527, "longitude": 6.12958, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Netherlands",
+      "isoCode": "NL",
+      "latitude": 52.1326,
+      "longitude": 5.2913,
+      "cities": [
+        { "name": "Amsterdam", "latitude": 52.36757, "longitude": 4.90414, "globalRegion": "Europe" },
+        { "name": "Breda", "latitude": 51.57191, "longitude": 4.76832, "globalRegion": "Europe" },
+        { "name": "Delft", "latitude": 52.01158, "longitude": 4.35707, "globalRegion": "Europe" },
+        { "name": "Eindhoven", "latitude": 51.44164, "longitude": 5.46972, "globalRegion": "Europe" },
+        { "name": "Enschede", "latitude": 52.22154, "longitude": 6.89366, "globalRegion": "Europe" },
+        { "name": "Groningen", "latitude": 53.21938, "longitude": 6.5665, "globalRegion": "Europe" },
+        { "name": "Haarlem", "latitude": 52.38739, "longitude": 4.64622, "globalRegion": "Europe" },
+        { "name": "Leiden", "latitude": 52.16011, "longitude": 4.49701, "globalRegion": "Europe" },
+        { "name": "Maastricht", "latitude": 50.85137, "longitude": 5.69097, "globalRegion": "Europe" },
+        { "name": "Nijmegen", "latitude": 51.81256, "longitude": 5.83723, "globalRegion": "Europe" },
+        { "name": "Rotterdam", "latitude": 51.9225, "longitude": 4.47917, "globalRegion": "Europe" },
+        { "name": "The Hague", "latitude": 52.0705, "longitude": 4.3007, "globalRegion": "Europe" },
+        { "name": "Tilburg", "latitude": 51.55551, "longitude": 5.0913, "globalRegion": "Europe" },
+        { "name": "Utrecht", "latitude": 52.09074, "longitude": 5.12142, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Norway",
+      "isoCode": "NO",
+      "latitude": 60.472,
+      "longitude": 8.4689,
+      "cities": [
+        { "name": "Bergen", "latitude": 60.39126, "longitude": 5.32205, "globalRegion": "Europe" },
+        { "name": "Kristiansand", "latitude": 58.14671, "longitude": 7.9956, "globalRegion": "Europe" },
+        { "name": "Oslo", "latitude": 59.91387, "longitude": 10.75225, "globalRegion": "Europe" },
+        { "name": "Stavanger", "latitude": 58.96998, "longitude": 5.73311, "globalRegion": "Europe" },
+        { "name": "Trondheim", "latitude": 63.43049, "longitude": 10.39506, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Portugal",
+      "isoCode": "PT",
+      "latitude": 39.3999,
+      "longitude": -8.2245,
+      "cities": [
+        { "name": "A dos Cunhados", "latitude": 39.13333, "longitude": -9.28333, "globalRegion": "Europe" },
+        { "name": "Braga", "latitude": 41.54545, "longitude": -8.42651, "globalRegion": "Europe" },
+        { "name": "Coimbra", "latitude": 40.21199, "longitude": -8.42921, "globalRegion": "Europe" },
+        { "name": "Évora", "latitude": 38.57356, "longitude": -7.90259, "globalRegion": "Europe" },
+        { "name": "Faro / Algarve", "latitude": 37.01936, "longitude": -7.93044, "globalRegion": "Europe" },
+        { "name": "Guimarães", "latitude": 41.44257, "longitude": -8.29619, "globalRegion": "Europe" },
+        { "name": "Leiria", "latitude": 39.74362, "longitude": -8.80705, "globalRegion": "Europe" },
+        { "name": "Lisbon", "latitude": 38.71689, "longitude": -9.13997, "globalRegion": "Europe" },
+        { "name": "Oporto", "latitude": 41.14961, "longitude": -8.61099, "globalRegion": "Europe" },
+        { "name": "Ponta Delgada", "latitude": 37.74125, "longitude": -25.67559, "globalRegion": "Europe" },
+        { "name": "Porto", "latitude": 41.15794, "longitude": -8.62911, "globalRegion": "Europe" },
+        { "name": "Sintra", "latitude": 38.7984, "longitude": -9.37826, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Poland",
+      "isoCode": "PL",
+      "latitude": 51.9194,
+      "longitude": 19.1451,
+      "cities": [
+        { "name": "Bialystok", "latitude": 53.13249, "longitude": 23.16884, "globalRegion": "Europe" },
+        { "name": "Bydgoszcz", "latitude": 53.12348, "longitude": 18.00844, "globalRegion": "Europe" },
+        { "name": "Częstochowa", "latitude": 50.81148, "longitude": 19.12031, "globalRegion": "Europe" },
+        { "name": "Koszalin", "latitude": 54.19438, "longitude": 16.17149, "globalRegion": "Europe" },
+        { "name": "Krakow", "latitude": 50.06465, "longitude": 19.94498, "globalRegion": "Europe" },
+        { "name": "Lódź", "latitude": 51.75925, "longitude": 19.45598, "globalRegion": "Europe" },
+        { "name": "Lublin", "latitude": 51.24645, "longitude": 22.56844, "globalRegion": "Europe" },
+        { "name": "Poznań", "latitude": 52.40637, "longitude": 16.92517, "globalRegion": "Europe" },
+        { "name": "Szczecin", "latitude": 53.42894, "longitude": 14.55302, "globalRegion": "Europe" },
+        { "name": "Toruń", "latitude": 53.01379, "longitude": 18.59844, "globalRegion": "Europe" },
+        { "name": "Warsaw", "latitude": 52.22977, "longitude": 21.01178, "globalRegion": "Europe" },
+        { "name": "Wrocław", "latitude": 51.10788, "longitude": 17.03854, "globalRegion": "Europe" }
+      ]
+    },
+    {
+        "name": "Romania",
+        "isoCode": "RO",
+        "latitude": 45.9432,
+        "longitude": 24.9668,
+        "cities": [
+            { "name": "Arad", "latitude": 46.18656, "longitude": 21.31227, "globalRegion": "Europe" },
+            { "name": "Bacău", "latitude": 46.56798, "longitude": 26.91519, "globalRegion": "Europe" },
+            { "name": "Baia Mare", "latitude": 47.65322, "longitude": 23.57949, "globalRegion": "Europe" },
+            { "name": "Cluj-Napoca", "latitude": 46.77044, "longitude": 23.59142, "globalRegion": "Europe" },
+            { "name": "Constanta", "latitude": 44.1598, "longitude": 28.63481, "globalRegion": "Europe" },
+            { "name": "Craiova", "latitude": 44.31667, "longitude": 23.8, "globalRegion": "Europe" },
+            { "name": "Iași", "latitude": 47.15845, "longitude": 27.60144, "globalRegion": "Europe" },
+            { "name": "Timișoara", "latitude": 45.74887, "longitude": 21.20868, "globalRegion": "Europe" }
+        ]
+    },
+    {
+        "name": "Russia",
+        "isoCode": "RU",
+        "latitude": 61.524,
+        "longitude": 105.3188,
+        "cities": [
+            { "name": "Moscow", "latitude": 55.75583, "longitude": 37.6173, "globalRegion": "Europe" },
+            { "name": "Novosibirsk", "latitude": 55.00835, "longitude": 82.93573, "globalRegion": "Europe" },
+            { "name": "Omsk", "latitude": 54.99138, "longitude": 73.36454, "globalRegion": "Europe" },
+            { "name": "Saint Petersburg", "latitude": 59.93428, "longitude": 30.3351, "globalRegion": "Europe" },
+            { "name": "Severodvinsk", "latitude": 64.56349, "longitude": 39.83016, "globalRegion": "Europe" },
+            { "name": "Stavropol", "latitude": 45.0428, "longitude": 41.97342, "globalRegion": "Europe" },
+            { "name": "Vladivostok", "latitude": 43.11554, "longitude": 131.88549, "globalRegion": "East Asia" },
+            { "name": "Khabarovsk", "latitude": 48.48271, "longitude": 135.08379, "globalRegion": "East Asia" }
+        ]
+    },
+    {
+        "name": "Serbia",
+        "isoCode": "RS",
+        "latitude": 44.0165,
+        "longitude": 21.0059,
+        "cities": [
+            { "name": "Belgrade", "latitude": 44.81761, "longitude": 20.45689, "globalRegion": "Europe" },
+            { "name": "Kragujevac", "latitude": 44.01667, "longitude": 20.91667, "globalRegion": "Europe" }
+        ]
+    },
+    {
+        "name": "Slovakia",
+        "isoCode": "SK",
+        "latitude": 48.669,
+        "longitude": 19.699,
+        "cities": [
+            { "name": "Bratislava", "latitude": 48.14816, "longitude": 17.10674, "globalRegion": "Europe" }
+        ]
+    },
+    {
+        "name": "Slovenia",
+        "isoCode": "SI",
+        "latitude": 46.1512,
+        "longitude": 14.9955,
+        "cities": [
+            { "name": "Ljubljana", "latitude": 46.05695, "longitude": 14.50575, "globalRegion": "Europe" },
+            { "name": "Maribor", "latitude": 46.55465, "longitude": 15.64588, "globalRegion": "Europe" }
+        ]
+    },
+    {
+      "name": "Spain",
+      "isoCode": "ES",
+      "latitude": 40.4637,
+      "longitude": -3.7492,
+      "cities": [
+        { "name": "Almería", "latitude": 36.83814, "longitude": -2.45974, "globalRegion": "Europe" },
+        { "name": "Arenys de Mar", "latitude": 41.58252, "longitude": 2.55207, "globalRegion": "Europe" },
+        { "name": "Badajoz", "latitude": 38.87945, "longitude": -6.97065, "globalRegion": "Europe" },
+        { "name": "Barcelona", "latitude": 41.38506, "longitude": 2.1734, "globalRegion": "Europe" },
+        { "name": "Bilbao", "latitude": 43.26301, "longitude": -2.93499, "globalRegion": "Europe" },
+        { "name": "Burgos", "latitude": 42.34399, "longitude": -3.69691, "globalRegion": "Europe" },
+        { "name": "Cáceres", "latitude": 39.47528, "longitude": -6.37224, "globalRegion": "Europe" },
+        { "name": "Cartagena", "latitude": 37.60512, "longitude": -0.98623, "globalRegion": "Europe" },
+        { "name": "Castellón", "latitude": 39.98636, "longitude": -0.05132, "globalRegion": "Europe" },
+        { "name": "Córdoba", "latitude": 37.88818, "longitude": -4.77938, "globalRegion": "Europe" },
+        { "name": "Cuenca", "latitude": 40.07039, "longitude": -2.13742, "globalRegion": "Europe" },
+        { "name": "Elche", "latitude": 38.26218, "longitude": -0.70107, "globalRegion": "Europe" },
+        { "name": "Fuenlabrada", "latitude": 40.28331, "longitude": -3.79415, "globalRegion": "Europe" },
+        { "name": "Getafe", "latitude": 40.30825, "longitude": -3.73239, "globalRegion": "Europe" },
+        { "name": "Gijón", "latitude": 43.54526, "longitude": -5.66112, "globalRegion": "Europe" },
+        { "name": "Granada", "latitude": 37.17734, "longitude": -3.59856, "globalRegion": "Europe" },
+        { "name": "Guadalajara", "latitude": 40.63333, "longitude": -3.16667, "globalRegion": "Europe" },
+        { "name": "Huelva", "latitude": 37.26142, "longitude": -6.94472, "globalRegion": "Europe" },
+        { "name": "Irun", "latitude": 43.33904, "longitude": -1.78938, "globalRegion": "Europe" },
+        { "name": "Jaén", "latitude": 37.77959, "longitude": -3.78491, "globalRegion": "Europe" },
+        { "name": "Jerez", "latitude": 36.68501, "longitude": -6.12607, "globalRegion": "Europe" },
+        { "name": "Las Palmas", "latitude": 28.12355, "longitude": -15.43626, "globalRegion": "Europe" },
+        { "name": "Leon", "latitude": 42.59873, "longitude": -5.56709, "globalRegion": "Europe" },
+        { "name": "Lleida", "latitude": 41.61759, "longitude": 0.62001, "globalRegion": "Europe" },
+        { "name": "Logroño", "latitude": 42.46632, "longitude": -2.44837, "globalRegion": "Europe" },
+        { "name": "Lugo", "latitude": 43.00994, "longitude": -7.55602, "globalRegion": "Europe" },
+        { "name": "Madrid", "latitude": 40.41678, "longitude": -3.70379, "globalRegion": "Europe" },
+        { "name": "Malaga", "latitude": 36.72127, "longitude": -4.4214, "globalRegion": "Europe" },
+        { "name": "Mallorca", "latitude": 39.69526, "longitude": 3.01757, "globalRegion": "Europe" },
+        { "name": "Marbella", "latitude": 36.51007, "longitude": -4.88245, "globalRegion": "Europe" },
+        { "name": "Murcia", "latitude": 37.98344, "longitude": -1.12989, "globalRegion": "Europe" },
+        { "name": "Pamplona", "latitude": 42.81687, "longitude": -1.64323, "globalRegion": "Europe" },
+        { "name": "Salamanca", "latitude": 40.9701, "longitude": -5.66354, "globalRegion": "Europe" },
+        { "name": "San Sebastián", "latitude": 43.32242, "longitude": -1.98584, "globalRegion": "Europe" },
+        { "name": "Santander", "latitude": 43.46231, "longitude": -3.80998, "globalRegion": "Europe" },
+        { "name": "Santiago de Compostela", "latitude": 42.88052, "longitude": -8.54569, "globalRegion": "Europe" },
+        { "name": "Seville", "latitude": 37.38863, "longitude": -5.98233, "globalRegion": "Europe" },
+        { "name": "Tarragona", "latitude": 41.11888, "longitude": 1.2453, "globalRegion": "Europe" },
+        { "name": "Tenerife", "latitude": 28.29156, "longitude": -16.62913, "globalRegion": "Europe" },
+        { "name": "Valencia", "latitude": 39.46991, "longitude": -0.37629, "globalRegion": "Europe" },
+        { "name": "Valladolid", "latitude": 41.65225, "longitude": -4.72453, "globalRegion": "Europe" },
+        { "name": "Vigo", "latitude": 42.2406, "longitude": -8.72073, "globalRegion": "Europe" },
+        { "name": "Zaragoza", "latitude": 41.64882, "longitude": -0.88909, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Switzerland",
+      "isoCode": "CH",
+      "latitude": 46.8182,
+      "longitude": 8.2275,
+      "cities": [
+        { "name": "Basel", "latitude": 47.5596, "longitude": 7.58858, "globalRegion": "Europe" },
+        { "name": "Bern", "latitude": 46.94809, "longitude": 7.44744, "globalRegion": "Europe" },
+        { "name": "Brunnen", "latitude": 46.99532, "longitude": 8.60502, "globalRegion": "Europe" },
+        { "name": "Fribourg", "latitude": 46.80648, "longitude": 7.16197, "globalRegion": "Europe" },
+        { "name": "Geneva", "latitude": 46.20439, "longitude": 6.14316, "globalRegion": "Europe" },
+        { "name": "Lausanne", "latitude": 46.51965, "longitude": 6.63227, "globalRegion": "Europe" },
+        { "name": "Lucerne", "latitude": 47.05048, "longitude": 8.30635, "globalRegion": "Europe" },
+        { "name": "Zürich", "latitude": 47.37689, "longitude": 8.54169, "globalRegion": "Europe" }
+      ]
+    },
+    {
+      "name": "Turkey",
+      "isoCode": "TR",
+      "latitude": 39.92077,
+      "longitude": 32.85411,
+      "cities": [
+        { "name": "Istanbul", "latitude": 41.00824, "longitude": 28.97836, "globalRegion": "Europe" }, 
+        { "name": "Edirne", "latitude": 41.67713, "longitude": 26.55597, "globalRegion": "Europe" },
+        { "name": "Ankara", "latitude": 39.92077, "longitude": 32.85411, "globalRegion": "Middle East" },
+        { "name": "Izmir", "latitude": 38.41925, "longitude": 27.12872, "globalRegion": "Middle East" },
+        { "name": "Antalya", "latitude": 36.89689, "longitude": 30.71332, "globalRegion": "Middle East" }
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "isoCode": "GB",
+      "latitude": 55.3781,
+      "longitude": -3.436,
+      "cities": [
+        { "name": "Aberdeen", "latitude": 57.14965, "longitude": -2.09908, "globalRegion": "Europe" },
+        { "name": "Bath", "latitude": 51.38143, "longitude": -2.35918, "globalRegion": "Europe" },
+        { "name": "Birmingham", "latitude": 52.48624, "longitude": -1.8904, "globalRegion": "Europe" },
+        { "name": "Brighton", "latitude": 50.82253, "longitude": -0.13716, "globalRegion": "Europe" },
+        { "name": "Bristol", "latitude": 51.45451, "longitude": -2.58791, "globalRegion": "Europe" },
+        { "name": "Cambridge", "latitude": 52.20534, "longitude": 0.12182, "globalRegion": "Europe" },
+        { "name": "Canterbury", "latitude": 51.28023, "longitude": 1.07891, "globalRegion": "Europe" },
+        { "name": "Cardiff", "latitude": 51.48158, "longitude": -3.17909, "globalRegion": "Europe" },
+        { "name": "Chelmsford", "latitude": 51.73559, "longitude": 0.46909, "globalRegion": "Europe" },
+        { "name": "Chester", "latitude": 53.19339, "longitude": -2.89308, "globalRegion": "Europe" },
+        { "name": "Chichester", "latitude": 50.83653, "longitude": -0.77918, "globalRegion": "Europe" },
+        { "name": "Colchester", "latitude": 51.88921, "longitude": 0.90421, "globalRegion": "Europe" },
+        { "name": "Coventry", "latitude": 52.40682, "longitude": -1.51969, "globalRegion": "Europe" },
+        { "name": "Derby", "latitude": 52.92253, "longitude": -1.47461, "globalRegion": "Europe" },
+        { "name": "Derry", "latitude": 55.00676, "longitude": -7.31827, "globalRegion": "Europe" },
+        { "name": "Dundee", "latitude": 56.46202, "longitude": -2.9707, "globalRegion": "Europe" },
+        { "name": "Durham", "latitude": 54.77676, "longitude": -1.57259, "globalRegion": "Europe" },
+        { "name": "Edinburgh", "latitude": 55.95325, "longitude": -3.18827, "globalRegion": "Europe" },
+        { "name": "Exeter", "latitude": 50.72168, "longitude": -3.53362, "globalRegion": "Europe" },
+        { "name": "Falmouth", "latitude": 50.15408, "longitude": -5.07109, "globalRegion": "Europe" },
+        { "name": "Glasgow", "latitude": 55.86424, "longitude": -4.25181, "globalRegion": "Europe" },
+        { "name": "Gloucester", "latitude": 51.86424, "longitude": -2.23815, "globalRegion": "Europe" },
+        { "name": "Halifax", "latitude": 53.72502, "longitude": -1.85754, "globalRegion": "Europe" },
+        { "name": "Hereford", "latitude": 52.0565, "longitude": -2.71616, "globalRegion": "Europe" },
+        { "name": "Hull", "latitude": 53.74434, "longitude": -0.33244, "globalRegion": "Europe" },
+        { "name": "Ipswich", "latitude": 52.05674, "longitude": 1.14822, "globalRegion": "Europe" },
+        { "name": "Lancaster", "latitude": 54.04657, "longitude": -2.79901, "globalRegion": "Europe" },
+        { "name": "Leeds", "latitude": 53.80076, "longitude": -1.54908, "globalRegion": "Europe" },
+        { "name": "Leicester", "latitude": 52.63688, "longitude": -1.13976, "globalRegion": "Europe" },
+        { "name": "Liverpool", "latitude": 53.40837, "longitude": -2.99157, "globalRegion": "Europe" },
+        { "name": "London", "latitude": 51.50722, "longitude": -0.1275, "globalRegion": "Europe" },
+        { "name": "Loughborough", "latitude": 52.77077, "longitude": -1.20412, "globalRegion": "Europe" },
+        { "name": "Luton", "latitude": 51.87867, "longitude": -0.42003, "globalRegion": "Europe" },
+        { "name": "Manchester", "latitude": 53.48076, "longitude": -2.24263, "globalRegion": "Europe" },
+        { "name": "Middlesbrough", "latitude": 54.57623, "longitude": -1.23483, "globalRegion": "Europe" },
+        { "name": "Milton Keynes", "latitude": 52.04062, "longitude": -0.75942, "globalRegion": "Europe" },
+        { "name": "Newcastle", "latitude": 54.97825, "longitude": -1.61744, "globalRegion": "Europe" },
+        { "name": "Norwich", "latitude": 52.63089, "longitude": 1.29736, "globalRegion": "Europe" },
+        { "name": "Nottingham", "latitude": 52.95478, "longitude": -1.15811, "globalRegion": "Europe" },
+        { "name": "Oxford", "latitude": 51.75202, "longitude": -1.25773, "globalRegion": "Europe" },
+        { "name": "Plymouth", "latitude": 50.37546, "longitude": -4.14265, "globalRegion": "Europe" },
+        { "name": "Preston", "latitude": 53.7632, "longitude": -2.70309, "globalRegion": "Europe" },
+        { "name": "Sheffield", "latitude": 53.38113, "longitude": -1.47008, "globalRegion": "Europe" },
+        { "name": "Southampton", "latitude": 50.9097, "longitude": -1.40435, "globalRegion": "Europe" },
+        { "name": "Sunderland", "latitude": 54.90687, "longitude": -1.3838, "globalRegion": "Europe" },
+        { "name": "Swansea", "latitude": 51.62144, "longitude": -3.94365, "globalRegion": "Europe" },
+        { "name": "Wolverhampton", "latitude": 52.58697, "longitude": -2.12882, "globalRegion": "Europe" }
+      ]
+    },
+    {
+        "name": "Japan",
+        "isoCode": "JP",
+        "latitude": 36.2048,
+        "longitude": 138.2529,
+        "cities": [
+          { "name": "Hamamatsu", "latitude": 34.71083, "longitude": 137.72605, "globalRegion": "East Asia" },
+          { "name": "Nagoya", "latitude": 35.18145, "longitude": 136.90657, "globalRegion": "East Asia" },
+          { "name": "Osaka", "latitude": 34.69374, "longitude": 135.50225, "globalRegion": "East Asia" },
+          { "name": "Tokyo", "latitude": 35.6895, "longitude": 139.69171, "globalRegion": "East Asia" }
+        ]
+      },
+      {
+        "name": "South Korea",
+        "isoCode": "KR",
+        "latitude": 35.9078,
+        "longitude": 127.7669,
+        "cities": [
+          { "name": "Seoul", "latitude": 37.56654, "longitude": 126.97797, "globalRegion": "East Asia" }
+        ]
+      },
+      {
+        "name": "Egypt",
+        "latitude": 26.7561,
+        "longitude": 33.95264,
+        "cities": [
+          { "name": "Red Sea Governorate", "latitude": 26.7561, "longitude": 33.95264, "globalRegion": "North Africa" }
+        ]
+      },
+    {
+      "name": "Australia",
+      "isoCode": "AU",
+      "latitude": -25.2744,
+      "longitude": 133.7751,
+      "cities": [
+        { "name": "Brisbane", "latitude": -27.46977, "longitude": 153.02513, "globalRegion": "Oceania" },
+        { "name": "Cairns", "latitude": -16.92033, "longitude": 145.77102, "globalRegion": "Oceania" },
+        { "name": "Gold Coast", "latitude": -28.01667, "longitude": 153.39999, "globalRegion": "Oceania" },
+        { "name": "Melbourne", "latitude": -37.81361, "longitude": 144.96306, "globalRegion": "Oceania" },
+        { "name": "Perth", "latitude": -31.95053, "longitude": 115.86046, "globalRegion": "Oceania" },
+        { "name": "Sydney", "latitude": -33.86882, "longitude": 151.20929, "globalRegion": "Oceania" }
+      ]
+    },
+    {
+      "name": "New Zealand",
+      "isoCode": "NZ",
+      "latitude": -40.9006,
+      "longitude": 174.886,
+      "cities": [
+        { "name": "Auckland", "latitude": -36.84846, "longitude": 174.76333, "globalRegion": "Oceania" }
+      ]
+    },
+    {
+        "name": "Singapore",
+        "isoCode": "SG",
+        "latitude": 1.35208,
+        "longitude": 103.81984,
+        "cities": [
+          { "name": "Singapore", "latitude": 1.35208, "longitude": 103.81984, "globalRegion": "Southeast Asia" }
+        ]
+      },
+      {
+        "name": "India",
+        "isoCode": "IN",
+        "latitude": 20.5937,
+        "longitude": 78.9629,
+        "cities": [
+            { "name": "Mumbai", "latitude": 19.076, "longitude": 72.8777, "globalRegion": "South Asia" },
+            { "name": "Delhi", "latitude": 28.7041, "longitude": 77.1025, "globalRegion": "South Asia" },
+            { "name": "Bangalore", "latitude": 12.9716, "longitude": 77.5946, "globalRegion": "South Asia" },
+            { "name": "Chennai", "latitude": 13.0827, "longitude": 80.2707, "globalRegion": "South Asia" },
+            { "name": "Kolkata", "latitude": 22.5726, "longitude": 88.3639, "globalRegion": "South Asia" }
+        ]
+    },
+    {
+        "name": "China",
+        "isoCode": "CN",
+        "latitude": 35.8617,
+        "longitude": 104.1954,
+        "cities": [
+            { "name": "Beijing", "latitude": 39.9042, "longitude": 116.4074, "globalRegion": "East Asia" },
+            { "name": "Shanghai", "latitude": 31.2304, "longitude": 121.4737, "globalRegion": "East Asia" },
+            { "name": "Guangzhou", "latitude": 23.1291, "longitude": 113.2644, "globalRegion": "East Asia" },
+            { "name": "Shenzhen", "latitude": 22.5431, "longitude": 114.0579, "globalRegion": "East Asia" },
+            { "name": "Chengdu", "latitude": 30.5728, "longitude": 104.0668, "globalRegion": "East Asia" }
+        ]
+    },
+    {
+        "name": "South Africa",
+        "isoCode": "ZA",
+        "latitude": -30.5595,
+        "longitude": 22.9375,
+        "cities": [
+            { "name": "Johannesburg", "latitude": -26.2041, "longitude": 28.0473, "globalRegion": "Southern Africa" },
+            { "name": "Cape Town", "latitude": -33.9249, "longitude": 18.4241, "globalRegion": "Southern Africa" },
+            { "name": "Durban", "latitude": -29.8587, "longitude": 31.0218, "globalRegion": "Southern Africa" },
+            { "name": "Pretoria", "latitude": -25.7479, "longitude": 28.2293, "globalRegion": "Southern Africa" }
+        ]
+    }
+  ]
+}
