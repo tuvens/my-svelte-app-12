@@ -1,0 +1,16 @@
+/* forms.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Label styles */
+label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+/* Input styles */
+.input {
+    @apply w-full px-4 py-2 border border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-400;
+}
+

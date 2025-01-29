@@ -4,8 +4,12 @@
 
 @layer base {
   /* Heading styles */
-  h1, h2, h3, h4 {
-    @apply text-2xl font-bold;
+  h1 {
+    @apply text-4xl font-extrabold text-blue-500; /* Large and blue */
+  }
+
+  h2, h3, h4 {
+    @apply text-2xl font-semibold text-gray-700; /* Smaller and gray */
   }
 
   /* Paragraph styles */
@@ -18,19 +22,9 @@
     @apply text-blue-500 hover:underline;
   }
 
-/* app.css */
-button.btn {
-  @apply hover:bg-gray-100 focus:outline-none focus:ring focus:ring-blue-300;
-}
-
-  /* Label styles */
-  label {
-    @apply block text-gray-700 text-sm font-bold mb-2;
-  }
-
-  /* Input styles */
-  .input {
-    @apply w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+  /* Button styles */
+  button {
+    @apply btn; /* Use Skeleton's button class */
   }
 
   /* List styles */

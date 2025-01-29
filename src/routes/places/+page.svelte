@@ -1,192 +1,154 @@
 <script lang="ts">
-    import DropdownPopup from '$lib/components/DropdownPopup.svelte';
-	import type { DropdownOption } from '$lib/components/types.js';
-	import type { GlobalRegion, Country, City } from '$lib/data/types';
+    import AutocompleteDropdown from '$lib/components/AutocompleteDropdown.svelte';
+    import type { GlobalRegion, Country, City } from '$lib/data/types';
 
-	export let data: {
-		globalRegions: GlobalRegion[];
-		countries: Country[];
-		cities: City[];
-	};
+    export let data: {
+        globalRegions: GlobalRegion[];
+        countries: Country[];
+        cities: City[];
+    };
 
-	// State variables
-	let selectedRegion: DropdownOption | null = null;
-    let selectedCountry: DropdownOption | null = null;
-	let selectedCity: DropdownOption | null = null;
+    // State variables
+    let selectedRegion: string | null = null;
+    let selectedCountry: string | null = null;
+    let selectedCity: string | null = null;
 
-	// Country options (dynamically populated based on selected region)
-	let countryOptions: DropdownOption[] = [];
-	let cityOptions: DropdownOption[] = [];
+    // Filtered options for each dropdown
+    let regionOptions: string[] = data.globalRegions.map(region => region.name);
+    let countryOptions: string[] = [];
+    let cityOptions: string[] = [];
 
-	// Filtered cities (dynamically populated based on selected country)
-    let filteredCities: City[] = data.cities; // Start with all cities by default
+    // Filtered cities for the table
+    let filteredCities: City[] = data.cities;
 
-    // Handle when a region is clicked
-    function handleRegionClick(region: DropdownOption) {
-		selectedRegion = region; // Set selected region
-        selectedCountry = null; // Clear country selection
-		selectedCity = null; // Clear city selection
+	let regionDropdown: AutocompleteDropdown | null = null;
+	let countryDropdown: AutocompleteDropdown | null = null;
+	let cityDropdown: AutocompleteDropdown | null = null;
 
-		countryOptions =
+
+    // Handle region selection
+    function handleRegionSelect(region: string) {
+        selectedRegion = region;
+        selectedCountry = null; // Reset selected country
+        selectedCity = null; // Reset selected city
+
+		// Clear dependent dropdowns
+		countryDropdown?.clear();
+		cityDropdown?.clear();
+
+        // Filter countries based on selected region
+        countryOptions =
             data.globalRegions
-                .find(r => r.name === region.value)
-                ?.countries.map(country => ({ value: country, label: country })) || []; // Populate countries
-		cityOptions = []; // Clear city options
+                .find(r => r.name === region)
+                ?.countries || [];
 
-        // Filter cities by selected region
-        filteredCities = data.cities.filter(city => city.globalRegion === region.value);
+        // Filter cities based on selected region
+        filteredCities = data.cities.filter(city => city.globalRegion === region);
+        cityOptions = []; // Clear city options
 
-        console.log('Selected Region:', region.value); // Log the selected region
+        console.log('Selected Region:', region);
     }
 
-	/*
-    // Handle when a country is clicked
-	function handleCountryClick(country: DropdownOption) {
-		selectedCountry = country; // Set selected country
-		selectedCity = null; // Clear city selection
+    // Handle country selection
+    function handleCountrySelect(country: string) {
+        selectedCountry = country;
+        selectedCity = null; // Reset selected city
 
-		// Find the selected region
-		const matchingRegion = data.globalRegions.find(region =>
-			region.countries.includes(country.value)
-		);
+		// Clear dependent dropdown
+		cityDropdown?.clear();
 
-		// Find the cities for the selected country
-		if (matchingRegion) {
-			cityOptions =
-				data.cities
-					.filter(city => city.globalRegion === matchingRegion.name && city.country === country.value)
-					.map(city => ({
-						value: city.name,
-						label: city.name,
-					}));
-			console.log('Matching Region:', matchingRegion);
+        // Filter cities based on selected country
+        filteredCities = data.cities.filter(city => city.country === country);
+        cityOptions = filteredCities.map(city => city.name);
 
-			filteredCities = data.cities.filter(
-				city => city.globalRegion === matchingRegion.name && city.country === country.value
-			);
-		} else {
-			cityOptions = [];
-			filteredCities = [];
-			console.error('No matching region found for:', country.value);
-		}
+        console.log('Selected Country:', country);
+    }
 
-		console.log('Selected Country:', country.value); // Log the selected country
-		console.log('City Options:', cityOptions);
-	}
-	*/
+    // Handle city selection
+    function handleCitySelect(city: string) {
+        selectedCity = city;
 
-	 
-	function handleCountryClick(country: DropdownOption) {
-		// Set the selected country and clear any previously selected city
-		selectedCountry = country;
-		selectedCity = null;
+        // Filter cities based on selected city
+        filteredCities = data.cities.filter(c => c.name === city);
 
-		// Log the selected country for debugging
-		console.log('Selected Country:', country.value);
-
-		// Populate city options based on the selected country
-		// This filters the cities to find those that belong to the selected country
-		cityOptions = data.cities
-			.filter(city => city.country === country.value) // Match cities by country
-			.map(city => ({
-				value: city.name, // Set the value for the dropdown
-				label: city.name, // Set the label to display in the dropdown
-			}));
-
-		// Log the available city options for the dropdown
-		console.log('City Options:', cityOptions);
-
-		// Filter cities for the table to display only those that match the selected country
-		filteredCities = data.cities.filter(
-			city =>
-				// Check if a region is selected, and match the city's global region if so
-				(!selectedRegion || city.globalRegion === selectedRegion.value) &&
-				// Always ensure the city matches the selected country
-				city.country === country.value
-		);
-
-		// Log the filtered cities to verify what will be displayed in the table
-		console.log('Filtered Cities:', filteredCities);
-	}	
-
-	// Handle when a city is clicked
-	function handleCityClick(city: DropdownOption) {
-        selectedCity = city; // Set selected city
-
-		filteredCities = data.cities.filter(
-       		c =>
-				c.globalRegion === selectedRegion?.value &&
-				c.country === selectedCountry?.value &&
-				c.name === city.value
-		);
-	
-        console.log('Selected City:', city.value);
+        console.log('Selected City:', city);
     }
 </script>
 
-<h1>Filter by Region and Country</h1>
+<h1>Filter by Region, Country, and City</h1>
 
-<div class="flex flex-col sm:flex-row gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
     <!-- Global Regions Dropdown -->
     <div>
         <h2>Global Regions</h2>
-        <DropdownPopup
-            options={data.globalRegions.map(region => ({ value: region.name, label: region.name }))}
-            onSelect={handleRegionClick}
+        <AutocompleteDropdown
+			bind:this={regionDropdown}
+            options={regionOptions}
+            placeholder="Select a region"
+            on:select={(event) => handleRegionSelect(event.detail)}
         />
     </div>
 
     <!-- Country Dropdown -->
-    {#if selectedRegion}
-        <div>
-            <h2>Countries in {selectedRegion.label}</h2>
-            <DropdownPopup
-                options={countryOptions}
-                onSelect={handleCountryClick}
-            />
-        </div>
-    {/if}
+    <div>
+        <h2>Countries</h2>
+        <AutocompleteDropdown
+			bind:this={countryDropdown}
+            options={countryOptions}
+            placeholder="Select a country"
+            on:select={(event) => handleCountrySelect(event.detail)}
+        />
+    </div>
 
     <!-- City Dropdown -->
-    {#if selectedCountry}
-        <div>
-            <h2>Cities in {selectedCountry.label}</h2>
-            <DropdownPopup
-                options={cityOptions}
-                onSelect={handleCityClick}
-            />
-        </div>
-    {/if}
+    <div>
+        <h2>Cities</h2>
+        <AutocompleteDropdown
+			bind:this={cityDropdown}
+            options={cityOptions}
+            placeholder="Select a city"
+            on:select={(event) => handleCitySelect(event.detail)}
+        />
+    </div>
 </div>
 
-{#if filteredCities.length === 0}
-    <p class="text-gray-500 italic">No cities match your filters.</p>
+<!-- Table of cities -->
+{#if filteredCities.length > 0}
+    <h2 class="mt-4">Filtered Cities</h2>
+    <table class="table-auto w-full border-collapse border border-gray-300">
+        <thead>
+            <tr>
+                <th class="border px-4 py-2 bg-gray-200">City</th>
+                <th class="border px-4 py-2 bg-gray-200">Country</th>
+                <th class="border px-4 py-2 bg-gray-200">Latitude</th>
+                <th class="border px-4 py-2 bg-gray-200">Longitude</th>
+            </tr>
+        </thead>
+        <tbody>
+            {#each filteredCities as city}
+                <tr>
+                    <td class="border px-4 py-2">{city.name}</td>
+                    <td class="border px-4 py-2">{city.country}</td>
+                    <td class="border px-4 py-2">{city.latitude}</td>
+                    <td class="border px-4 py-2">{city.longitude}</td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
 {:else}
-	{#if selectedCountry}
-		<h2>Cities in {selectedCountry.label}</h2>
-	{:else if selectedRegion}
-		<h2>Cities in {selectedRegion.label}</h2>
-	{:else}
-		<h2>Cities around the World</h2>
-	{/if}
-	<table>
-		<thead>
-			<tr>
-				<th>City</th>
-				<th>Country</th>
-				<th>Latitude</th>
-				<th>Longitude</th>
-			</tr>
-		</thead>
-		<tbody>
-			{#each filteredCities as city}
-				<tr>
-					<td>{city.name}</td>
-					<td>{city.country}</td>
-					<td>{city.latitude}</td>
-					<td>{city.longitude}</td>
-				</tr>
-			{/each}
-		</tbody>
-	</table>
+    <p class="text-gray-500 italic mt-4">No cities match your filters.</p>
 {/if}
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+</style>

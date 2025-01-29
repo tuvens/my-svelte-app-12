@@ -7,11 +7,14 @@ import type { Config } from 'tailwindcss';
 
 export default {
 	content: [
-		join(__dirname, './src/**/*.{html,js,svelte,ts}') // Include Svelte files
+		join(__dirname, './src/**/*.{html,js,svelte,ts}'), // Include Svelte files
+		join(__dirname, './src/styles/*.css') // Include custom CSS files
 	],
 
 	theme: {
-		extend: {}
+		extend: {        
+			
+		}
 	},
 
 	plugins: [
